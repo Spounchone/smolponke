@@ -1,0 +1,338 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    margin: 0;
+
+    background-color: #0f0f0f;
+    color: #fff;
+  }
+  body {
+    font-family: 'Rubik', sans-serif; /* o 'Comic Neue' */
+  }
+  
+  .hero-title,
+  h1, h2, .step-card h3 {
+    font-family: 'Lilita One', cursive; /* o 'Bangers' */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .buy-section {
+    padding: 100px 40px;
+    background-color: #f7c700;
+   
+  }
+  
+  .buy-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .buy-text {
+    flex: 1 1 80%;
+    font-size: x-large;
+  color: #000;
+  }
+  
+  .buy-subtitle {
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    font-weight: 2000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  .buy-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .step-card {
+    background: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgb(255, 255, 255);
+  }
+  
+  .step-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .buy-image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .buy-image img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .utilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  .utilities-grid a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .utilities-grid a:hover {
+    transform: scale(1.05);
+  }
+  
+  .utilities-grid img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.2));
+    transition: filter 0.3s;
+  }
+  
+  .utilities-grid img:hover {
+    filter: drop-shadow(0 0 16px rgba(0, 255, 255, 0.5));
+  }
+  
+  .utilities-grid p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .fade-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #f7c700 100%);
+    z-index: 2;
+  }
+  
+
+  .explore-btn {
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background-color: #f7c700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(247, 199, 0, 0.6);
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+  }
+  
+  .explore-btn:hover {
+    background-color: #fff200;
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 25px rgba(247, 199, 0, 0.8);
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+  }
+  .social-buttons {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+  }
+  
+  .social-buttons a img {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+    transition: transform 0.2s ease;
+  }
+  
+  .social-buttons a:hover img {
+    transform: scale(1.2);
+  }
+  .hero-banner {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 1000;
+  }
+  
+  .hero-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+    font-weight: 1000;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #ffd000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .buy-section {
+    padding: 100px 40px;
+    background-color: #f7c700;
+    color: #000;
+  }
+  
+  .buy-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .buy-text {
+    flex: 1 1 55%;
+  }
+  
+  .buy-subtitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .buy-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .step-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .step-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .buy-image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .buy-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .about-section {
+    background: #fffbe6;
+    padding: 100px 40px;
+    color: #222;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .about-text {
+    flex: 1 1 55%;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .about-image {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  .copy-btn, .copy-text {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .copy-btn:hover, .copy-text:hover {
+    background: #444;
+  }
+    
